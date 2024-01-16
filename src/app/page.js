@@ -1,6 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { TfiEmail } from "react-icons/tfi";
+import { GrDocumentPdf } from "react-icons/gr";
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -15,10 +19,22 @@ export default function Home() {
           maintainability and best practices with agility and rapid deployment.
         </p>
         <div role="list" className={styles["hero__links"]}>
-          <div role="listitem">Github</div>
-          <div role="listitem">Linkedin</div>
-          <div role="listitem">Resume</div>
-          <div role="listitem">Email</div>
+          <div role="listitem">
+            <SiGithub />
+            Github
+          </div>
+          <div role="listitem">
+            <SiLinkedin />
+            Linkedin
+          </div>
+          <div role="listitem">
+            <GrDocumentPdf />
+            Resume
+          </div>
+          <div role="listitem">
+            <TfiEmail />
+            Email
+          </div>
         </div>
       </section>
 
