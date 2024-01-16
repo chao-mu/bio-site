@@ -5,8 +5,11 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
-        <h1 className={styles["hero__title"]}>I build realities from dreams</h1>
-        <p className={styles["hero__body"]}>
+        <h1 className={styles["hero__title"]}>
+          <div>Achievable Dreams,</div>
+          <div>Maintainable Realities</div>
+        </h1>
+        <p className={styles["hero__description"]}>
           I will apply my 18 years of full-stack software engineering experience
           to deliver quality web applications that balance a dedication to
           maintainability and best practices with agility and rapid deployment.
