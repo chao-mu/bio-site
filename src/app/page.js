@@ -1,3 +1,5 @@
+import { Roboto_Mono } from "next/font/google";
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -5,13 +7,19 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { TfiEmail } from "react-icons/tfi";
 import { GrDocumentPdf } from "react-icons/gr";
 
+const robotoMono = Roboto_Mono({ subsets: ["latin"] });
+
 export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
         <h1 className={styles["hero__title"]}>
-          <div>Achievable Dreams,</div>
-          <div>Maintainable Realities</div>
+          <div>
+            <span className={styles.emphasis}>Achievable</span> Dreams,
+          </div>
+          <div>
+            <span className={styles.emphasis}>Maintainable</span> Realities
+          </div>
         </h1>
         <p className={styles["hero__description"]}>
           I will apply my 18 years of full-stack software engineering experience
@@ -39,6 +47,7 @@ export default function Home() {
       </section>
 
       <div className={styles["headshot"]}>
+        <div className={styles["headshot__circle"]}></div>
         <Image
           src="/headshot-cutout.jpg"
           alt="Photo of Autumn Green"
@@ -47,7 +56,10 @@ export default function Home() {
           height={200}
           priority
         />
-        <div className={styles["headshot__name"]}>Autumn Green</div>
+        <div className={`${styles["headshot__name"]} ${robotoMono.className}`}>
+          Autumn
+          <span className={styles["headshot__name--green"]}> Green</span>
+        </div>
       </div>
     </main>
   );
