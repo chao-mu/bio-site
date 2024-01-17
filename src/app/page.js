@@ -13,18 +13,20 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
-        <h1 className={styles["hero__title"]}>
+        <h1 className={`${robotoMono.className} ${styles["hero__title"]}`}>
           <div>
-            <span className={styles.emphasis}>Achievable</span> Dreams,
+            <span className={styles.emphasis}>Achievable</span>
+            <span> Dreams,</span>
           </div>
           <div>
-            <span className={styles.emphasis}>Maintainable</span> Realities
+            <span className={styles.emphasis}>Maintainable</span>
+            <span> Realities</span>
           </div>
         </h1>
         <p className={styles["hero__description"]}>
           I will apply my 18 years of full-stack software engineering experience
-          to deliver quality web applications that balance a dedication to
-          maintainability and best practices with agility and rapid deployment.
+          to deliver high quality software solutions that balance a dedication
+          to maintainability with agility and rapid deployment.
         </p>
         <div role="list" className={styles["hero__links"]}>
           <div role="listitem">
@@ -49,7 +51,7 @@ export default function Home() {
       <div className={styles["headshot"]}>
         <div className={styles["headshot__circle"]}></div>
         <Image
-          src="/headshot-cutout.jpg"
+          src="/headshot.png"
           alt="Photo of Autumn Green"
           className={styles["headshot__image"]}
           width={200}

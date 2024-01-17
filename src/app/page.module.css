@@ -1,8 +1,9 @@
 .main {
   display: flex;
   flex-wrap: wrap;
-  padding: 1.5rem;
+  padding: 2.5rem;
   justify-content: center;
+  gap: 2.5rem;
 }
 
 .hero {
@@ -17,11 +18,13 @@
   font-weight: 700;
   display: flex;
   flex-direction: column;
+  column-gap: 1ch;
   row-gap: 0.5rem;
 }
 
 .hero__description {
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 .hero__links {
@@ -49,10 +52,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .headshot__circle {
+  --glow-color: #ff00b5;
   position: absolute;
   width: 200px;
   height: 200px;
@@ -61,7 +64,8 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background: radial-gradient(var(--color-primary), var(--color-secondary));
+  background: radial-gradient(var(--color-primary), var(--glow-color));
+  box-shadow: 0px 0px 28px 5px var(--glow-color);
 }
 
 .headshot__image {
@@ -71,6 +75,8 @@
 .headshot__name {
   font-size: 1.5rem;
   font-weight: 700;
+  background-color: var(--color-bg);
+  z-index: 3;
 }
 
 .headshot__name--green {
