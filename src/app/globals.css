@@ -34,4 +34,7 @@ body {
 body {
   color: var(--color-neutral-100);
   background-color: var(--color-bg);
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
 }
