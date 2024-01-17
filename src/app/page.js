@@ -9,6 +9,14 @@ import { GrDocumentPdf } from "react-icons/gr";
 
 const robotoMono = Roboto_Mono({ subsets: ["latin"] });
 
+function HeroLink({ href, children }) {
+  return (
+    <a role="listitem" href={href}>
+      {children}
+    </a>
+  );
+}
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -29,22 +37,22 @@ export default function Home() {
           to maintainability with agility and rapid deployment.
         </p>
         <div role="list" className={styles["hero__links"]}>
-          <div role="listitem">
+          <HeroLink href="https://github.com/chao-mu">
             <SiGithub />
             Github
-          </div>
-          <div role="listitem">
+          </HeroLink>
+          <HeroLink href="https://linkedin.com/in/autumn-unicode">
             <SiLinkedin />
             Linkedin
-          </div>
-          <div role="listitem">
+          </HeroLink>
+          <HeroLink href="/Autumn%20Green%20-%20Resume.pdf">
             <GrDocumentPdf />
             Resume
-          </div>
-          <div role="listitem">
+          </HeroLink>
+          <HeroLink href="mailto:autumn@queerlyautumn.com">
             <TfiEmail />
             Email
-          </div>
+          </HeroLink>
         </div>
       </section>
 
