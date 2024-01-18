@@ -36,5 +36,5 @@ body {
   background-color: var(--color-bg);
   display: grid;
   place-items: center;
-  min-height: 100dvh;
+  min-height: 100vh;
 }
