@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+// Icons
+import { SiGithub, SiLichess } from "react-icons/si";
 import "./globals.css";
 
 import styles from "./layout.module.css";
@@ -42,6 +44,33 @@ export default function RootLayout({ children }) {
         </header>
         {children}
         <Analytics />
+        <footer className={styles.footer}>
+          <ul className={styles["footer__links"]}>
+            <li>
+              <Link href="https://github.com/chao-mu/bio-site">
+                <SiGithub />
+                <span>Source Code</span>
+              </Link>
+            </li>
+            <li>|</li>
+            <li>
+              <Link href="https://lichess.org/@/bestieboots">
+                <SiLichess />
+                Play me!
+              </Link>
+            </li>
+          </ul>
+          <div className="text-gray-400">
+            <span>© 2024 </span>
+            <Link
+              href="https://modestprogress.com/"
+              className="hover:text-amber-500 hover:underline"
+            >
+              Modest Progress LLC
+            </Link>
+            . All Rights Reserved.
+          </div>
+        </footer>
       </body>
     </html>
   );
