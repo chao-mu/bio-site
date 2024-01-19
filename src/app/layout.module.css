@@ -1,0 +1,24 @@
+.body {
+  color: var(--color-neutral-100);
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem 2.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+  font-size: 1.25rem;
+}

@@ -1,9 +1,9 @@
 .main {
   display: flex;
   flex-wrap: wrap;
-  padding: 2.5rem;
   justify-content: center;
   gap: 2.5rem;
+  padding: 2.5rem 0;
 }
 
 .hero {
