@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} ${styles.body}`}>
         <header className={styles.header}>
+          {/*
           <Link href="/" className={styles["header__logo"]}>
             <Image src="/logo.svg" alt="Logo" width={64} height={64} />
           </Link>
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
               </li>
             </ul>
           </nav>
+          */}
         </header>
         {children}
         <Analytics />
